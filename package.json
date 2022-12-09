@@ -2,6 +2,7 @@
   "name": "blog-post",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://leo04101995.github.io/react_deploy_gh_1",
   "dependencies": {
     "axios": "^0.21.1",
     "date-fns": "^2.29.3",
@@ -13,6 +14,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d  build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
